@@ -96,7 +96,12 @@
             </div>  
             <div class="linha-separadora"></div> 
             <div class="modulo">
-                <img src="" id="banner-noticia">  
+                <div class="flex-center">
+                    <i class="fa-solid fa-angle-left icon-click titulo-blue" onclick="voltarImagem()"></i>
+                    <img src="" id="banner-noticia">  
+                    <i class="fa-solid fa-angle-right icon-click titulo-blue" onclick="avancarImagem()"></i>
+                </div>
+                
                 <div class="cards-noticias">
                     <div class="card card-noticia active" id="card-banner0" onclick="selecionarImagem(0)">
                         <p>Evento on-line da CIJ aborda maternidade e paternidade biológicas e adotivas</p>
@@ -160,8 +165,5 @@
             </div>
         </div>
     </div>
-   
-    
-    
 </body>
 </html>

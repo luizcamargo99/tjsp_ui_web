@@ -233,6 +233,17 @@ p {
     font-size: 1.7rem;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.icon-click {
+    font-size: 2rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+
 .pesquisa-processual input {
     width: 15rem;
 }
@@ -299,12 +310,15 @@ p {
 }
 
 #banner-noticia {
-    width: 30rem;
+    width: 28rem;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 785px) {
     .cards-noticias{
         display: none;
+    }
+    .icon-click {
+        visibility: visible;
     }
 }
 
@@ -336,6 +350,7 @@ p {
 
     #banner-noticia {
         width: 20rem;
+        height: 15rem;
     }
 
     .acesso-modulo {

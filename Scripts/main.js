@@ -4,23 +4,24 @@ const imagens = [
     './Images/banner3.jpg',
     './Images/banner4.jpg'
 ];
+
 let countBannerNoticias = 0;
 
 function carregamentoInicial () {
-    bannerNoticias();
+    bannerNoticiasLoop();
 }
 
-function bannerNoticias () {    
-    definirImagemSrc('./Images/banner1.png');
+function bannerNoticiasLoop () {
+    definirImagemSrc(imagens[0]);
     setInterval(() => {  
-        countBannerNoticias++;        
-        if (countBannerNoticias == imagens.length){
-            countBannerNoticias = 0;
-        }
-        removerCardsAtivos();
-        definirImagemAtiva();        
-        definirImagemSrc(imagens[countBannerNoticias]);
+        selecionarImagem(countBannerNoticias+1);
     }, 5000);    
+}
+
+function validarLimiteCarrossel () {
+    if (countBannerNoticias == imagens.length){
+        countBannerNoticias = 0;
+    }
 }
 
 function definirImagemAtiva () {
@@ -39,6 +40,7 @@ function removerCardsAtivos () {
 
 function selecionarImagem (numeroImagem){
     countBannerNoticias = numeroImagem;
+    validarLimiteCarrossel();
     removerCardsAtivos();
     definirImagemAtiva();
     definirImagemSrc(imagens[countBannerNoticias]);
@@ -47,4 +49,12 @@ function selecionarImagem (numeroImagem){
 function definirImagemSrc(caminhoImagem){
     const bannerImagem = document.getElementById('banner-noticia');   
     bannerImagem.src = caminhoImagem;  
+}
+
+function voltarImagem (){
+    selecionarImagem(countBannerNoticias-1);
+}
+
+function avancarImagem (){
+    selecionarImagem(countBannerNoticias+1);
 }

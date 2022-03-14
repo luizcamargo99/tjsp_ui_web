@@ -43,9 +43,9 @@ function criarCardsNoticias () {
    }
 }
 
-function bannerNoticiasLoop () {    
+function bannerNoticiasLoop () { 
     setInterval(() => {  
-        selecionarImagem(countBannerNoticias+1);
+         selecionarImagem(countBannerNoticias+1);        
     }, 5000);    
 }
 

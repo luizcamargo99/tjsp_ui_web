@@ -9,6 +9,8 @@
     --cor-cinza-escuro: #727272;
     --fundo-links: rgb(186, 186, 247);
     --fundo-cards: #F4F4F4;
+    --ultimas-noticias: #2196f3;
+    --principais-acessos: #037a6c;
 }
 
 body {
@@ -74,6 +76,10 @@ button.search {
     margin-left: 0.5rem;
 }
 
+p {
+    z-index: 1;
+}
+
 #campo-pesquisar input:focus {
     outline: none;
 }
@@ -125,6 +131,14 @@ button.search {
     color: var(--cor-primaria);
 }
 
+.titulo-blue {
+    color: var(--ultimas-noticias);
+}
+
+.titulo-green {
+    color: var(--principais-acessos);
+}
+
 .negrito {
     font-weight: bolder;
 }
@@ -141,9 +155,9 @@ button.search {
 }
 
 .linha-separadora {
-    height: .01rem;
-    margin: 0 2rem 0 2rem;
-    background: var(--cor-cinza-claro);
+    height: 0.11rem;
+    margin: 0.5rem 2rem 0 2rem;
+    background: #e5e5e5;
 }
 
 .margem-separador {
@@ -156,7 +170,7 @@ button.search {
     width: -webkit-fill-available;
 }
 
-.cards {
+.cards-processual {
     display: flex;
     margin: 1rem;
     flex-direction: row;
@@ -177,7 +191,7 @@ button.search {
     font-size: 1.3rem;
 }
 
-.modulo-processual {
+.modulo {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
@@ -239,6 +253,61 @@ button.search {
     margin: 1rem;
 }
 
+.card {
+    background: var(--fundo-cards);
+    border-left: .4rem solid var(--cor-cinza-claro);
+    border-top: .01rem solid var(--cor-cinza-claro);
+    border-right: .01rem solid var(--cor-cinza-claro);
+    height: 4rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.cards-noticias .card.active, .cards-noticias .card:hover{
+    border-left: .4rem solid var(--ultimas-noticias);
+}
+
+.cards-acessos .card {
+    border-left: .2rem solid var(--principais-acessos);
+    margin: 0.7rem;
+    height: 3.2rem;
+    width: 8rem;
+    border-top: none;
+    border-right: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #e7e7e7;
+    position: absolute;
+    z-index: 0;
+    display: flex !important;
+    justify-content: flex-end;
+    width: 90%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+#banner-noticia {
+    width: 30rem;
+}
+
+@media (max-width: 780px) {
+    .cards-noticias{
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     #faixa-inicial {
         justify-content: center;
@@ -263,6 +332,14 @@ button.search {
 
     .menu {
         display: none;
+    }
+
+    #banner-noticia {
+        width: 20rem;
+    }
+
+    .acesso-modulo {
+        flex-wrap: nowrap;
     }
 
    

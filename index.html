@@ -10,7 +10,7 @@
     <link rel="icon" href="./Images/icon.png">
     <title>TJSP UI Web - Luiz Camargo</title>
 </head>
-<body>
+<body onload="carregamentoInicial()">
     <div id="faixa-inicial">
         <ul>
             <li><a href="">INTRANET</a></li>
@@ -53,10 +53,10 @@
     <div class="secao">
         <div class="subsecao-titulo">
             <p class="titulo-secao titulo-red">CONSULTA PROCESSUAL</p>
-            <p class="titulo-red">Dúvidas?</p>
+            <p class="titulo-red texto-card ">Dúvidas?</p>
         </div>    
         <div class="linha-separadora"></div>   
-        <div class="modulo-processual">
+        <div class="modulo">
             <div class="pesquisa-processual">
                 <select name="" id="">
                     <option value="">Consulta de Processos</option>
@@ -68,7 +68,7 @@
                 <input type="input" placeholder="Digite o número do processo">
                 <button class="search"></button>                
             </div>
-            <div class="cards">
+            <div class="cards-processual">
                 <div class="mini-card">
                     <div class="icon">
                         <i class="fa-solid fa-magnifying-glass-plus"></i> 
@@ -85,11 +85,82 @@
                         Consulta Processual Avançada
                     </p>
                 </div> 
-            </div>
-                 
+            </div>                 
         </div>
     </div>
-    
+    <div class="row">
+        <div class="secao">
+            <div class="subsecao-titulo">
+                <p class="titulo-secao titulo-blue">ÚLTIMAS NOTÍCIAS</p>
+                <p class="titulo-blue texto-card ">Listar todas</p>
+            </div>  
+            <div class="linha-separadora"></div> 
+            <div class="modulo">
+                <img src="" id="banner-noticia">  
+                <div class="cards-noticias">
+                    <div class="card card-noticia active" id="card-banner0" onclick="selecionarImagem(0)">
+                        <p>Evento on-line da CIJ aborda maternidade e paternidade biológicas e adotivas</p>
+                    </div>
+                    <div class="card card-noticia" id="card-banner1" onclick="selecionarImagem(1)">
+                        <p>Inscrições abertas para o 19º Prêmio Innovare</p>
+                    </div>
+                    <div class="card card-noticia" id="card-banner2" onclick="selecionarImagem(2)">
+                        <p>Mulher que teve nome incluído em lista de suspeitos de irregularidades...</p>
+                    </div>
+                    <div class="card card-noticia" id="card-banner3" onclick="selecionarImagem(3)">
+                        <p>Projetos do TJSP promovem conciliação na iniciativa privada e no Poder Público</p>
+                    </div>
+                </div>           
+            </div>          
+        </div>
+      
+        <div class="secao">
+            <div class="subsecao-titulo">
+                <p class="titulo-secao titulo-green">PRINCIPAIS ACESSOS</p>
+            </div>    
+            <div class="linha-separadora"></div>   
+            <div class="modulo texto-card acesso-modulo">
+                <div class="cards-acessos">
+                    <div class="card">
+                        <p>Certidão</p>
+                        <i class="fa-solid fa-copy card-icon"></i>
+                    </div>  
+                    <div class="card">
+                        <p>Diário da Justiça Eletrônico </p>
+                        <i class="fa-solid fa-newspaper card-icon"></i>
+                    </div>  
+                    <div class="card">
+                        <p>Despesas Processuais</p>
+                        <i class="fa-solid fa-dollar-sign card-icon"></i>
+                    </div>  
+                    <div class="card">
+                        <p>Telefones e Endereços</p>
+                        <i class="fa-solid fa-phone card-icon"></i>
+                    </div>  
+                </div>
+                <div class="cards-acessos">
+                    <div class="card">
+                        <p>Peticionamento Eletrônico</p>
+                        <i class="fa-solid fa-laptop card-icon"></i>
+                    </div>  
+                    <div class="card">
+                        <p>Portal de Custas e Recolhimento</p>
+                        <i class="fa-solid fa-warehouse card-icon"></i>
+                    </div>  
+                    <div class="card">
+                        <p>Jurisprudência</p>
+                        <i class="fa-solid fa-gavel card-icon"></i>
+                    </div>  
+                    <div class="card">
+                        <p>Precatórios</p>
+                        <i class="fa-brands fa-stack-overflow card-icon"></i>
+                    </div>  
+                </div>
+                         
+            </div>
+        </div>
+    </div>
+   
     
     
 </body>

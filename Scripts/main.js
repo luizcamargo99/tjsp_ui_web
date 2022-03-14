@@ -1,4 +1,3 @@
-
 const imagens = [
     {'url': './Images/banner1.png',
     'titulo': 'Evento on-line da CIJ aborda maternidade e paternidade biológicas e adotivas'},
@@ -14,7 +13,8 @@ let countBannerNoticias = 0;
 
 function carregamentoInicial () {
     criarCardsNoticias();
-    selecionarImagem(0);
+    selecionarImagem(countBannerNoticias);
+    document.getElementById('noticias-slider').style.visibility = 'visible';
     bannerNoticiasLoop(); 
 }
 
@@ -52,6 +52,9 @@ function bannerNoticiasLoop () {
 function validarLimiteCarrossel () {
     if (countBannerNoticias == imagens.length){
         countBannerNoticias = 0;
+    }
+    else if (countBannerNoticias < 0) {
+        countBannerNoticias = imagens.length;
     }
 }
 

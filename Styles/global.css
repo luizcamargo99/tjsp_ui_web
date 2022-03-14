@@ -328,6 +328,9 @@ p {
     height: 20rem;
 }
 
+#noticias-slider{
+    visibility: hidden;
+}
 @media (max-width: 785px) {
     #cards-noticias{
         display: none;

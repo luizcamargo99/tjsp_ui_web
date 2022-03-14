@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: #F44336;  
+    --cor-cinza-claro: #b3b3b3;  
+    --cor-cinza-escuro: #727272;
+    --fundo-links: rgb(186, 186, 247);
+    --fundo-cards: #F4F4F4;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+#faixa-inicial a:hover {
+    color: #000;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    margin: 0 .5rem 0 .5rem;
+}
+
+header {
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input, select {
+    padding: 0.4rem;
+    width: 20rem;
+    border: .01rem solid var(--cor-cinza-claro);
+    margin: .5rem;
+}
+
+select:focus, input:focus{
+    outline: .1rem solid var(--cor-primaria);
+}
+
+button {
+    color: #fff;
+    background: var(--cor-primaria);
+    border: none;
+    height: 1.8rem;
+    width: 4.2rem;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    margin: .5rem;
+}
+
+button.search {
+    background-image: url(../Images/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0.5rem;
+}
+
+#campo-pesquisar input:focus {
+    outline: none;
+}
+
+
+#faixa-inicial {
+    background: #EEEEEE;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: .7rem;
+    align-items: center;
+    color: var(--cor-cinza-escuro);
+    font-weight: 600;
+    width: 100%;
+}
+
+#logo {
+    width: 10rem;
+}
+
+#campo-pesquisar {
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    font-size: 0.9rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.menu li {
+    border-bottom: 0.35rem solid rgb(190, 190, 190);
+    width: 9rem;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.menu li:hover, .menu a:hover {
+    background: #fff;
+    border-bottom-color: var(--cor-primaria);
+}
+
+.subtitulo {
+    color: var(--cor-cinza-escuro);
+}
+
+.titulo-red {
+    color: var(--cor-primaria);
+}
+
+.negrito {
+    font-weight: bolder;
+}
+
+.slogan {
+    width: 9rem;
+}
+
+.linha-separadora-vertical {
+    width: 0.01rem;
+    height: 3rem;
+    background: var(--cor-cinza-claro);
+    margin: 1rem;
+}
+
+.linha-separadora {
+    height: .01rem;
+    margin: 0 2rem 0 2rem;
+    background: var(--cor-cinza-claro);
+}
+
+.margem-separador {
+    margin: 0 10% 0 10%;
+}
+
+.banner-fixed {
+    margin: 0 10% 0 10%;
+    text-align: center;
+    width: -webkit-fill-available;
+}
+
+.cards {
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.secao {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 3rem 2rem 0 2rem;
+}
+
+.titulo-secao {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.modulo-processual {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.subsecao-titulo {
+    display: flex;
+    margin: 0 2rem 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-card {
+    width: 8rem;
+    height: 4rem;
+    display: flex;
+    margin-left: 2rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-card {
+    font-size: .8rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;;
+    height: 100%;
+    background: var(--fundo-cards);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: var(--cor-primaria);
+    font-size: 1.7rem;
+}
+
+.pesquisa-processual input {
+    width: 15rem;
+}
+
+.pesquisa-processual button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.3rem;
+}
+
+.pesquisa-processual {
+    display: flex;
+    background: var(--fundo-cards);
+    border-left: 0.3rem solid var(--cor-primaria);
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+@media (max-width: 600px) {
+    #faixa-inicial {
+        justify-content: center;
+        font-size: .5rem;
+    }    
+
+    .linha-separadora-vertical, #menu-separacao {
+        display: none;
+    }
+    .slogan {
+        width: auto;
+        margin: 1rem;
+    }
+
+    .subtitulos {
+        text-align: center;
+    }
+
+    input {
+        width: 13rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+   
+}

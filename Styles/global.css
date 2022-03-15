@@ -185,7 +185,7 @@ p {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 3rem 0 0 2rem;
+    margin: 3rem 2rem 0 2rem;
 }
 
 .column {
@@ -296,6 +296,7 @@ p {
     border-left: .4rem solid var(--cor-cinza-claro);
     border-top: .01rem solid var(--cor-cinza-claro);
     border-right: .01rem solid var(--cor-cinza-claro);
+    border-bottom: .01rem solid var(--cor-cinza-claro);
     height: 4.7rem;
     width: 10rem;
     display: flex;
@@ -427,8 +428,4 @@ p {
     .caption-noticia p {
         font-size: .9rem;
     } 
-    
-    .secao {
-       margin: 3rem 2rem 0 2rem;
-    }
 }

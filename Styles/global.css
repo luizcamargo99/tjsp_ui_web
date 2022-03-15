@@ -326,6 +326,7 @@ p {
 #banner-noticia {
     width: 28rem;
     height: 20rem;
+    position: relative;
 }
 
 #noticias-slider{
@@ -374,6 +375,7 @@ p {
     .caption-noticia{
         width: 18rem;
         height: 2rem;
+        margin: 11rem 0 0rem 1rem;
     }
 
     .caption-noticia p {

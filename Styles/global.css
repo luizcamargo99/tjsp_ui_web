@@ -41,17 +41,23 @@ li {
     margin: 0 .5rem 0 .5rem;
 }
 
-header, footer {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+header {
+    margin: 1rem;
 }
 
 footer {
     height: 4rem;
     background: #EEEEEE;
 }
+
+
+header, footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
 
 input, select {
     padding: 0.4rem;

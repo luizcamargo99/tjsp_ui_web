@@ -12,6 +12,7 @@
     --ultimas-noticias: #2196f3;
     --principais-acessos: #037a6c;
     --divulgacao: #ff9d00;
+    --videos-destaque: #4d4c7a;
 }
 
 body {
@@ -184,7 +185,7 @@ p {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 3rem 2rem 0 2rem;
+    margin: 3rem 0 0 2rem;
 }
 
 .column {
@@ -295,7 +296,7 @@ p {
     border-left: .4rem solid var(--cor-cinza-claro);
     border-top: .01rem solid var(--cor-cinza-claro);
     border-right: .01rem solid var(--cor-cinza-claro);
-    height: 4rem;
+    height: 4.7rem;
     width: 10rem;
     display: flex;
     align-items: center;
@@ -312,8 +313,8 @@ p {
 .cards-acessos .card {
     border-left: .2rem solid var(--principais-acessos);
     margin: 0.7rem;
-    height: 3.2rem;
-    width: 8rem;
+    height: 4rem;
+    width: 9rem;
     border-top: none;
     border-right: none;
 }
@@ -321,7 +322,6 @@ p {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .card-icon {
@@ -338,7 +338,7 @@ p {
 
 .caption-noticia {
     background: black;
-    width: 26rem;
+    width: 33rem;
     height: 3rem;
     position: absolute;
     opacity: .8;
@@ -350,8 +350,8 @@ p {
 }
 
 #banner-noticia {
-    width: 28rem;
-    height: 20rem;
+    width: 35rem;
+    height: 23rem;
     position: relative;
 }
 
@@ -363,12 +363,27 @@ p {
     margin: .5rem;
 }
 
-@media (max-width: 785px) {
+.texto-purple {
+    color: var(--videos-destaque);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@media (max-width: 825px) {
     #cards-noticias{
         display: none;
     }
     .icon-click {
         visibility: visible;
+    }
+    
+    .row {
+        justify-content: center;
     }
 }
 
@@ -401,6 +416,7 @@ p {
     #banner-noticia {
         width: 20rem;
         height: 15rem;
+        position: relative;
     }
 
     .caption-noticia{
@@ -410,6 +426,9 @@ p {
 
     .caption-noticia p {
         font-size: .9rem;
+    } 
+    
+    .secao {
+       margin: 3rem 2rem 0 2rem;
     }
-   
 }

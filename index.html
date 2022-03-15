@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/global.css">
-    <script src="https://kit.fontawesome.com/be98971a98.js" crossorigin="anonymous"></script>
-    <script src="./Scripts/main.js"></script>
-    <link rel="icon" href="./Images/icon.png">
-    <title>TJSP UI Web - Luiz Camargo</title>
-</head>
-<body onload="carregamentoInicial()">
-    <div id="faixa-inicial">
-        <ul>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./Styles/global.css">
+      <script src="https://kit.fontawesome.com/be98971a98.js" crossorigin="anonymous"></script>
+      <script src="./Scripts/main.js"></script>
+      <link rel="icon" href="./Images/icon.png">
+      <title>TJSP UI Web - Luiz Camargo</title>
+   </head>
+   <body onload="carregamentoInicial()">
+      <div id="faixa-inicial">
+         <ul>
             <li><a href="">INTRANET</a></li>
             <p>|</p>
             <li><a href="">CORREIO ELETRONICO</a></li>
@@ -20,162 +20,184 @@
             <li><a href="">ACESSO À INFORMAÇÃO</a></li>
             <p>|</p>
             <li><a href="">OUVIDORIA</a></li>
-        </ul>
-    </div>
-    <header>
-        <img src="./Images/logo.png" id="logo" alt="logo tjsp">
-        <div class="subtitulos">
+         </ul>
+      </div>
+      <header>
+         <img src="./Images/logo.png" id="logo" alt="logo tjsp">
+         <div class="subtitulos">
             <h2 class="titulo-red">Tribunal de Justiça</h2>
             <p class="subtitulo">Estado de São Paulo</p>
-        </div>        
-        <div class="linha-separadora-vertical"></div>
-        <div class="slogan">
+         </div>
+         <div class="linha-separadora-vertical"></div>
+         <div class="slogan">
             <p class="subtitulo negrito">
-                A justiça próxima do cidadão
+               A justiça próxima do cidadão
             </p>
-        </div>
-        <div id="campo-pesquisar">
+         </div>
+         <div id="campo-pesquisar">
             <input type="text">
             <button class="search"></button>
-        </div>   
-    </header>    
-    <div class="linha-separadora margem-separador" id="menu-separacao"></div>    
-    <div class="menu">
-        <ul>
+         </div>
+      </header>
+      <div class="linha-separadora margem-separador" id="menu-separacao"></div>
+      <div class="menu">
+         <ul>
             <li><a href="">INSTITUCIONAL</a></li>
             <li><a href="">PROCESSOS</a></li>
             <li><a href="">INFORMAÇÕES</a></li>
             <li><a href="">TRANSPARÊNCIA</a></li>
             <li><a href="">CONTATOS</a></li>
-        </ul>
-    </div>
-    <img src="./Images/BannerFixoAgendamento.png" class="banner-fixed" alt="banner de agendamento">
-    <div class="secao">
-        <div class="subsecao-titulo">
-            <p class="titulo-secao titulo-red">CONSULTA PROCESSUAL</p>
-            <p class="titulo-red texto-card ">Dúvidas?</p>
-        </div>    
-        <div class="linha-separadora"></div>   
-        <div class="modulo">
-            <div class="pesquisa-processual">
-                <select name="processos">
-                    <option value="">Consulta de Processos</option>
-                    <option value="">VEC (Processo Físico)</option>
-                    <option value="">Decisões do 2º grau (Nº do Processo)</option>
-                    <option value="">Decisões do 2º grau (Nº do Registro)</option>
-                    <option value="">Jurisprudência</option>
-                </select>
-                <input type="text" placeholder="Digite o número do processo">
-                <button class="search"></button>                
+         </ul>
+      </div>
+      <img src="./Images/BannerFixoAgendamento.png" class="banner-fixed" alt="banner de agendamento">
+      <div class="main">
+         <div class="row">
+            <div class="secao">
+               <div class="subsecao-titulo">
+                  <p class="titulo-secao titulo-red">CONSULTA PROCESSUAL</p>
+                  <p class="titulo-red texto-card ">Dúvidas?</p>
+               </div>
+               <div class="linha-separadora"></div>
+               <div class="modulo">
+                  <div class="pesquisa-processual">
+                     <select name="processos">
+                        <option value="">Consulta de Processos</option>
+                        <option value="">VEC (Processo Físico)</option>
+                        <option value="">Decisões do 2º grau (Nº do Processo)</option>
+                        <option value="">Decisões do 2º grau (Nº do Registro)</option>
+                        <option value="">Jurisprudência</option>
+                     </select>
+                     <input type="text" placeholder="Digite o número do processo">
+                     <button class="search"></button>                
+                  </div>
+                  <div class="cards-processual">
+                     <div class="mini-card">
+                        <div class="icon">
+                           <i class="fa-solid fa-magnifying-glass-plus"></i> 
+                        </div>
+                        <p class="texto-card">
+                           Consulta Processual Avançada
+                        </p>
+                     </div>
+                     <div class="mini-card">
+                        <div class="icon">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <p class="texto-card">
+                           Consulta Processual Avançada
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="cards-processual">
-                <div class="mini-card">
-                    <div class="icon">
-                        <i class="fa-solid fa-magnifying-glass-plus"></i> 
-                    </div> 
-                    <p class="texto-card">
-                        Consulta Processual Avançada
-                    </p>
-                </div>   
-                <div class="mini-card">
-                    <div class="icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <p class="texto-card">
-                        Consulta Processual Avançada
-                    </p>
-                </div> 
-            </div>                 
-        </div>
-    </div>
-    <div class="row">
-        <div class="secao">
-            <div class="subsecao-titulo">
-                <p class="titulo-secao titulo-blue">ÚLTIMAS NOTÍCIAS</p>
-                <p class="titulo-blue texto-card ">Listar todas</p>
-            </div>  
-            <div class="linha-separadora"></div> 
-            <div class="modulo">
-                <div class="flex-center">
-                    <div class="column alinhamento-fim">
+         </div>
+         <div class="row">
+            <div class="secao">
+               <div class="subsecao-titulo">
+                  <p class="titulo-secao titulo-blue">ÚLTIMAS NOTÍCIAS</p>
+                  <p class="titulo-blue texto-card ">Listar todas</p>
+               </div>
+               <div class="linha-separadora"></div>
+               <div class="modulo">
+                  <div class="flex-center">
+                     <div class="column alinhamento-fim">
                         <img src="./Images/banner1.png" id="banner-noticia" alt="Notícia">                
                         <div class="caption-noticia">
-                            <p id="caption-noticia-texto" class="texto-white"></p>
+                           <p id="caption-noticia-texto" class="texto-white"></p>
                         </div>
-                    </div>
-                </div>                
-                <div id="cards-noticias"> </div>           
-            </div>          
-        </div>
-      
-        <div class="secao secao-acessos">
-            <div class="subsecao-titulo">
-                <p class="titulo-secao titulo-green">PRINCIPAIS ACESSOS</p>
-            </div>    
-            <div class="linha-separadora"></div>   
-            <div class="modulo texto-card acesso-modulo">
-                <div class="cards-acessos">
-                    <div class="card">
+                     </div>
+                  </div>
+                  <div id="cards-noticias"> </div>
+               </div>
+            </div>
+            <div class="secao secao-acessos">
+               <div class="subsecao-titulo">
+                  <p class="titulo-secao titulo-green">PRINCIPAIS ACESSOS</p>
+               </div>
+               <div class="linha-separadora"></div>
+               <div class="modulo texto-card acesso-modulo">
+                  <div class="cards-acessos">
+                     <div class="card">
                         <p>Certidão</p>
                         <i class="fa-solid fa-copy card-icon"></i>
-                    </div>  
-                    <div class="card">
+                     </div>
+                     <div class="card">
                         <p>Diário da Justiça Eletrônico </p>
                         <i class="fa-solid fa-newspaper card-icon"></i>
-                    </div>  
-                    <div class="card">
+                     </div>
+                     <div class="card">
                         <p>Despesas Processuais</p>
                         <i class="fa-solid fa-dollar-sign card-icon"></i>
-                    </div>  
-                    <div class="card">
+                     </div>
+                     <div class="card">
                         <p>Telefones e Endereços</p>
                         <i class="fa-solid fa-phone card-icon"></i>
-                    </div>  
-                </div>
-                <div class="cards-acessos">
-                    <div class="card">
+                     </div>
+                  </div>
+                  <div class="cards-acessos">
+                     <div class="card">
                         <p>Peticionamento Eletrônico</p>
                         <i class="fa-solid fa-laptop card-icon"></i>
-                    </div>  
-                    <div class="card">
+                     </div>
+                     <div class="card">
                         <p>Portal de Custas e Recolhimento</p>
                         <i class="fa-solid fa-warehouse card-icon"></i>
-                    </div>  
-                    <div class="card">
+                     </div>
+                     <div class="card">
                         <p>Jurisprudência</p>
                         <i class="fa-solid fa-gavel card-icon"></i>
-                    </div>  
-                    <div class="card">
+                     </div>
+                     <div class="card">
                         <p>Precatórios</p>
                         <i class="fa-brands fa-stack-overflow card-icon"></i>
-                    </div>  
-                </div>    
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <div class="secao">
-        <div class="subsecao-titulo">
-            <p class="titulo-secao texto-yellow">DIVULGAÇÃO</p>
-        </div>    
-        <div class="linha-separadora"></div>   
-        <div class="modulo texto-card">
-            <div class="column">
-                <div class="modulo alinhamento-espacado">
-                    <img src="./Images/BannerAlertaLeilaoGolpe.png" alt="Banner Alerta Leilão Golpe" class="mini-banner">
-                    <img src="./Images/BannerCartamulheres.png" alt="Banner Carta Mulheres" class="mini-banner">
-                </div> 
-                <div class="modulo alinhamento-espacado">
-                    <img src="./Images/BannerFixoEmailsInstitucionais.png" alt="BannerFixoEmailsInstitucionais" class="mini-banner">
-                    <img src="./Images/BannerCoronavirus.png" alt="BannerCoronavirus" class="mini-banner">                   
-                </div> 
+         </div>
+         <div class="row">
+            <div class="secao">
+               <div class="subsecao-titulo">
+                  <p class="titulo-secao texto-yellow">DIVULGAÇÃO</p>
+               </div>
+               <div class="linha-separadora"></div>
+               <div class="modulo texto-card">
+                  <div class="column">
+                     <div class="modulo alinhamento-espacado">
+                        <img src="./Images/BannerAlertaLeilaoGolpe.png" alt="Banner Alerta Leilão Golpe" class="mini-banner">
+                        <img src="./Images/BannerCartamulheres.png" alt="Banner Carta Mulheres" class="mini-banner">
+                     </div>
+                     <div class="modulo alinhamento-espacado">
+                        <img src="./Images/BannerFixoEmailsInstitucionais.png" alt="BannerFixoEmailsInstitucionais" class="mini-banner">
+                        <img src="./Images/BannerCoronavirus.png" alt="BannerCoronavirus" class="mini-banner">                   
+                     </div>
+                  </div>
+                  <div class="column">
+                     <img src="Images/telepresenciais.png" alt="telepresenciais" class="banner-medio">  
+                  </div>
+               </div>
             </div>
-             
-            <div class="column">
-                <img src="Images/telepresenciais.png" alt="telepresenciais" class="banner-medio">  
-            </div> 
-                              
-        </div>
-    </div> 
-
-</body>
+         </div>
+         <div class="row">
+            <div class="secao">
+               <div class="subsecao-titulo">
+                  <p class="titulo-secao texto-purple">VÍDEOS EM DESTAQUE</p>
+                  <p class="texto-purple texto-card ">Ver mais</p>
+               </div>
+               <div class="linha-separadora"></div>
+               <div class="modulo texto-card">
+                  <div class="column mini-banner">
+                     <iframe width="360" height="203" src="https://www.youtube.com/embed/otn8hT-QzJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="column mini-banner">
+                     <iframe width="360" height="203" src="https://www.youtube.com/embed/34FNAxb5TZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="column mini-banner">
+                     <iframe width="360" height="203" src="https://www.youtube.com/embed/w57vHtbdBBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>

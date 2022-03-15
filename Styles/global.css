@@ -13,6 +13,7 @@
     --principais-acessos: #037a6c;
     --divulgacao: #ff9d00;
     --videos-destaque: #4d4c7a;
+    --minha-cor: #CD00BB;
 }
 
 body {
@@ -40,12 +41,16 @@ li {
     margin: 0 .5rem 0 .5rem;
 }
 
-header {
+header, footer {
     display: flex;
-    margin: 1rem;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+footer {
+    height: 4rem;
+    background: #EEEEEE;
 }
 
 input, select {
@@ -214,8 +219,8 @@ p {
 }
 
 .titulo-secao {
-    font-weight: 600;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .modulo {
@@ -373,6 +378,20 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+}
+
+footer p {
+    color: var(--cor-cinza-escuro);
+    font-weight: 600;
+}
+
+#nome {
+    color: var(--minha-cor);
+}
+
+#nome:hover {
+    color: #fff;
+    background-color: var(--minha-cor);
 }
 
 @media (max-width: 825px) {

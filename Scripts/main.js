@@ -13,8 +13,7 @@ let countBannerNoticias = 0;
 
 function carregamentoInicial () {
     criarCardsNoticias();
-    selecionarImagem(countBannerNoticias);
-    document.getElementById('noticias-slider').style.visibility = 'visible';
+    selecionarImagem(0);
     bannerNoticiasLoop(); 
 }
 
@@ -88,12 +87,4 @@ function definirImagemSrc(caminhoImagem){
 function definirCaptionImagem(titulo){
     const captionTexto = document.getElementById('caption-noticia-texto');   
     captionTexto.innerHTML = titulo; 
-}
-
-function voltarImagem (){
-    selecionarImagem(countBannerNoticias-1);
-}
-
-function avancarImagem (){
-    selecionarImagem(countBannerNoticias+1);
 }

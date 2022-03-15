@@ -47,7 +47,7 @@ header {
 
 footer {
     height: 4rem;
-    background: #EEEEEE;
+    background: #212121;
 }
 
 
@@ -387,7 +387,7 @@ p {
 }
 
 footer p {
-    color: var(--cor-cinza-escuro);
+    color: #fff;
 }
 
 #nome {

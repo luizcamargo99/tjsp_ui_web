@@ -194,6 +194,10 @@ p {
     align-items: center;
 }
 
+.secao-acessos {
+    margin: 3rem 0 0 0;
+}
+
 .banner-medio {
     height: 83%;
     width: 90%;

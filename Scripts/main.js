@@ -1,13 +1,14 @@
 const imagens = [
-    {'url': './Images/banner1.png',
-    'titulo': 'Evento on-line da CIJ aborda maternidade e paternidade biológicas e adotivas'},
-    {'url': './Images/banner2.png',
-    'titulo': 'Inscrições abertas para o 19º Prêmio Innovare'},
-    {'url': './Images/banner3.jpg',
-    'titulo': 'Mulher que teve nome incluído em lista de suspeitos de irregularidades...'},
-    {'url': './Images/banner4.jpg',
-    'titulo': 'Projetos do TJSP promovem conciliação na iniciativa privada e no Poder Público'},
+    new Imagem('./Images/banner1.png', 'Evento on-line da CIJ aborda maternidade e paternidade biológicas e adotivas'),
+    new Imagem('./Images/banner2.png', 'Inscrições abertas para o 19º Prêmio Innovare'),
+    new Imagem('./Images/banner3.jpg', 'Mulher que teve nome incluído em lista de suspeitos de irregularidades'),
+    new Imagem('./Images/banner4.jpg', 'Projetos do TJSP promovem conciliação na iniciativa privada e no Poder Público'),
 ];
+
+function Imagem (url, titulo){
+    this.url = url;
+    this.titulo = titulo;
+}
 
 let countBannerNoticias = 0;
 

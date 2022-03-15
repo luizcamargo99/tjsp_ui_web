@@ -98,10 +98,15 @@
             <div class="modulo">
                 <div class="flex-center" id="noticias-slider">
                     <i class="fa-solid fa-angle-left icon-click titulo-blue" onclick="voltarImagem()"></i>
-                    <img src="./Images/banner1.png" id="banner-noticia" alt="Notícia">                
-                    <div class="caption-noticia">
-                        <p id="caption-noticia-texto" class="texto-white"></p>
+                    <div style="display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;">
+                        <img src="./Images/banner1.png" id="banner-noticia" alt="Notícia">                
+                        <div class="caption-noticia">
+                            <p id="caption-noticia-texto" class="texto-white"></p>
+                        </div>
                     </div>
+                    
                     <i class="fa-solid fa-angle-right icon-click titulo-blue" onclick="avancarImagem()"></i>
                 </div>                
                 <div id="cards-noticias"> </div>           

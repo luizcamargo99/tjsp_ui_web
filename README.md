@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://user-images.githubusercontent.com/59785233/158885307-7f4b7e09-8ba8-43c7-a880-941267801506.png" alt="Logo" style="width: 10rem"  />
-  <h1> TJSP Website Home Page Clone </h1>
+  <h1> TJSP Website Home Page Clone (Responsive) </h1>
 <a href="https://luizcamargo.dev" target="blank"><img src="https://img.shields.io/badge/Get%20to%20know%20me%20better-My%20Website-purple" alt="my website"/></a>
 </div>
 

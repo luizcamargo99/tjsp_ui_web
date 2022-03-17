@@ -19,7 +19,9 @@ The TJSP Home Screen Clone was a suggestion from Mayara, my wife. She is a lawye
 
 ## 💻 Interface Mockup 
 
+![Free-Apple-MacBook-Pro-16- -iPhone-13-Pro-Max-Mockup-PSD](https://user-images.githubusercontent.com/59785233/158886872-b4438398-8949-43cb-b0fa-82343a1ee272.jpg)
 
+![Free-Macbook-Pro-Mockup-PSD-2018](https://user-images.githubusercontent.com/59785233/158886895-8122209e-8761-4d10-a8a9-f571fd77cdf9.jpg)
 
 
 ## 🤔 How do I access the project?
